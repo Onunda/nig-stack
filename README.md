@@ -37,9 +37,9 @@ docker-compose up -d
 ```
 ## Docker Images Used (Official & Verified)
 
-[**node-red**](https://hub.docker.com/r/nodered/node-red) / 
+[**node-red**](https://hub.docker.com/r/nodered/node-red) / latest
 
-[**InfluxDB**](https://hub.docker.com/_/influxdb) / 
+[**InfluxDB**](https://hub.docker.com/_/influxdb) / latest
 
 [**Grafana-OSS**](https://hub.docker.com/r/grafana/grafana-oss) / `8.4.3`
 
