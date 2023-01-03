@@ -1,0 +1,22 @@
+[
+    {
+        "id": "94e70e6c1519b366",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "function 1",
+        "func": "msg.payload = [\n    {\n        measurement: msg.measurement,\n        fields: { imbalance_buy_price: msg.payload.data[0].imbalance_buy_price, imbalance_sell_price: msg.payload.data[0].imbalance_sell_price },\n        timestamp: msg.payload.data[0].timestamp\n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "3642b0e2a2849df0",
+                "cda4556bcefc8f69"
+            ]
+        ]
+    }
+]

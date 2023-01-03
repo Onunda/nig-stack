@@ -9,7 +9,7 @@ services:
     ports:
       - ${NODERED_PORT}:1880
     volumes:
-      - nodered-storage:/home/user/node_red_data:rw
+      - node_red_data:/data:rw
       
   influxdb:
     image: influxdb:latest
@@ -29,9 +29,9 @@ services:
     depends_on:
       - influxdb
     ports:
-      - ${GRAFANA_PORT}:3000
+      - ${GRAFANA_PORT}:3001
 
 volumes:
-  nodered-storage:
+  node_red_data:
   grafana-storage:
   influxdb-storage:
